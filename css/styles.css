@@ -146,6 +146,10 @@ footer {
   color: var(--main-head-color);
   cursor: pointer;
 }
+.button-portfolio.button-current {
+  background-color: var(--accent-color);
+  color:#fff;
+}
 
 .button-current,
 .link.button-current {
