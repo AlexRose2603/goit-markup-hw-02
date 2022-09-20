@@ -29,19 +29,20 @@ body {
 ul {
   list-style: none;
 }
-.header-list a {
+.navigation-list a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-head-color);
   text-decoration: none;
 }
-.header-list .link:hover,
-.header-list .link:focus {
+.navigation-list .link:hover,
+.navigation-list .link:focus {
   color: var(--accent-color);
 }
 
-.contacts a {
+.contacts-list a {
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
@@ -62,8 +63,7 @@ ul {
   background-color: var(--hero-background-color);
 }
 
-.main-title {
-  font-style: normal;
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,11 +81,13 @@ ul {
   color: var(--second-background-color);
   background-color: var(--accent-color);
 }
-.hidden-title {
-  visibility: hidden;
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 
 .advantages-title {
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-head-color);
@@ -94,14 +96,12 @@ ul {
   line-height: 1.71;
   color: var(--main-text-color);
 }
-.section > .section-title,
-.people-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
-.people {
+.workers {
   background-color: var(--header-background-color);
 }
 
@@ -146,24 +146,25 @@ footer {
   color: var(--main-head-color);
   cursor: pointer;
 }
-.all-button .button-current  {
-  cursor: pointer;
-}
+
 .button-current,
 .link.button-current {
-  color: var(--accent-color);
+  background-color: #fff;
+  color:var(--accent-color);
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color:#fff;
 }
 
 .project {
-  font-family: "Roboto";
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-head-color);
 }
 .project-title {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
